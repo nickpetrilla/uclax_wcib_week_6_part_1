@@ -29,6 +29,7 @@
 }
 
 footer {
+  display: inline-block;
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
@@ -39,40 +40,45 @@ footer p {
 
 .full-img {
   position: relative;
-  display: block;
+  display: inline-block;
+  width: 800px;
+  height: 600px;
 }
-
-.full-img img{
+.full-img img {
   width: 100%;
 }
 
-.view-image {
-  cursor: pointer;
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  height: 480px;
+  background-color: rgba(0,0,0,0);
 }
 
+button {
+ background-color: green;
+ border-radius: .5rem;
+ color: white;
+ font-size: 1.5rem;
+ font-weight: bold;
+ display: block;
+ float: right;
+ margin-top: .5rem;
+}
 
+.thumb-bar {
+  display: inline-block;
+  margin-left: 10%;
+  margin-right: 10%;
+}
 
+.thumb-bar img {
+  display: inline-block;
+  width: 14rem;
+  padding: 1.5rem;
+  float: left;
+  cursor: pointer;
 
-
-
-
-
-
-
-
-//placeholder image css
-
-.bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
+}
