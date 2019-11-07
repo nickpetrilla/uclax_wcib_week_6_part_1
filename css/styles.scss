@@ -39,11 +39,15 @@ footer p {
 
 .full-img {
   position: relative;
-  display: inline-block;
+  display: block;
 }
 
 .full-img img{
   width: 100%;
+}
+
+.view-image {
+  cursor: pointer;
 }
 
 
