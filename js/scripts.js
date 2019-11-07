@@ -27,7 +27,7 @@ btn.onclick = function() {
     console.log('Dark Mode');
     btn.setAttribute('class','light');
     btn.textContent = 'Lighten';
-    overlay.style.backgroundColor = 'rgba(0,0,0,0.5)';
+    overlay.style.backgroundColor = 'rgba(0,0,0,0.25)';
   } else {
     btn.setAttribute('class','dark');
     btn.textContent = 'Darken';
